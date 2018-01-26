@@ -7,5 +7,8 @@ object Main extends App {
 
   val s = new Strings
   //println(s.findLongest("carrtetttt", "carrotttt"))
-  println(s.findLongest("carrot", "cargfd"))
+  //println(s.findLongest("carrot", "cargfd"))
+  val ss = new Subsequence
+  println(ss.lcs("good!".split("").toList,"agvosrxoctcvgxaoxxda!".split("").toList))
+
 }

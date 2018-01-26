@@ -1,21 +1,20 @@
 package Strings1and2
 
 
-
 class Subsequence {
 
-  def longestFromStartingLetter(start: Int, word1: String, word2: String): String = {
-    val startChar = word1.charAt(start)
+  def lcs[T]: (List[T], List[T]) => List[T] = {
+    case (_, Nil) => Nil
+    case (Nil, _) => Nil
+    case (x :: xs, y :: ys) if x == y => x :: lcs(xs, ys)
+    case (x :: xs, y :: ys) => {
+      (lcs(x :: xs, ys), lcs(xs, y :: ys)) match {
+        case (xs, ys) if xs.length > ys.length => xs
+        case (xs, ys) => ys
+      }
+    }
   }
-
-  def checkSubsequence(testSequence: String, word2: String): Boolean = {
-    val testArray = testSequence.split("")
-    val word2Array = word2.split("")
-    var currentLetter = testArray.head
-    var previousLetterIndex = 0
-
-  }
-
-  def checkNextLetter(index: Int,)
-
 }
+
+
+

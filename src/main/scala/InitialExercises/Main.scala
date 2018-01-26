@@ -1,5 +1,7 @@
 package InitialExercises
 
+import Functionals.Functional1
+
 object Main extends App {
 
   val s = Strings
@@ -23,8 +25,4 @@ object Main extends App {
   println(p.pattrnM2(lstIn))
   println(p.pattrnM2(arryIn))
   println(p.pattrnM2(tpleIn))
-
-  val f = Functional1
-  println(f.functional1().mkString(","))
-  //println(java.util.TimeZone.getAvailableIDs().mkString(",\n,"))
 }

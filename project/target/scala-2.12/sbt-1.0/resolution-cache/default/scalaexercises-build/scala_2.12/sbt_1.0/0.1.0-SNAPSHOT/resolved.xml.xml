@@ -4,7 +4,7 @@
 		module="scalaexercises-build"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20180123091636"
+		publication="20180126094452"
 		e:sbtVersion="1.0" e:scalaVersion="2.12"
 	>
 		<description>

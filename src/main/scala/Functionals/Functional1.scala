@@ -1,4 +1,4 @@
-package InitialExercises
+package Functionals
 
 import java.util.TimeZone.getAvailableIDs
 
