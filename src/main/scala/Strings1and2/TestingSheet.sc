@@ -1,0 +1,2 @@
+
+"HelloWorld".substring(0)
